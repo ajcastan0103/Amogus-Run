@@ -1,2 +1,2 @@
 # Amogus-Run
-An among us 2D side-scrolling game inspired by Google Chrome's "T-Rex Run"
+An Among Us 2D side-scrolling parody game inspired by Google Chrome's "T-Rex Run"
