@@ -23,5 +23,9 @@ Make sure you have Pygame installed on your system. </br>
 - Run the following command to start the game: </br>
 `python main.py`
 
+### Gameplay Screenshots
+<img src="menusc.JPG" alt="Alt Text" style="width:400px;">
+<img src="screenshot.JPG" alt="Alt Text" style="width:400px;">
+
 ## Acknowledgements
 Special thank you to Pygame for providing a great library for game dev!
