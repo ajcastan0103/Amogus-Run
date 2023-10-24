@@ -18,7 +18,7 @@ Make sure you have Pygame installed on your system. </br>
 `pip install pygame`
 
 ### Running the Game:
-- Clone the repository to your local machine.
+- Clone the repository to your local machine or download the code in a zip file.
 - Open a terminal and navigate to the game directory.
 - Run the following command to start the game: </br>
 `python main.py`
