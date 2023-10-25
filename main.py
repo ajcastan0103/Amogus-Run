@@ -11,17 +11,13 @@ SCREEN = pygame.display.set_mode((SCREEN_WIDTH,SCREEN_HEIGHT))
 RUNNING =[ pygame.image.load(os.path.join("Assets/player", "frame0.png")),
           pygame.image.load(os.path.join("Assets/player", "frame1.png")),
           pygame.image.load(os.path.join("Assets/player", "frame2.png")),
-          pygame.image.load(os.path.join("Assets/player", "frame3.png"))
-            
-          ]
+          pygame.image.load(os.path.join("Assets/player", "frame3.png"))]
 
 JUMPING = pygame.image.load(os.path.join("Assets/player", "frame0.png"))
 
 ENEMY=[pygame.image.load(os.path.join("Assets/enemy", "enemyp.png")),
        pygame.image.load(os.path.join("Assets/enemy", "enemyb.png")),
-       pygame.image.load(os.path.join("Assets/enemy", "enemyy.png"))
-       
-       ]
+       pygame.image.load(os.path.join("Assets/enemy", "enemyy.png"))]
 
 BG= pygame.image.load(os.path.join("Assets/other", "bgimg.jpg"))
 
