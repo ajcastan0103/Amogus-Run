@@ -31,5 +31,5 @@ Make sure you have Pygame installed on your system. </br>
 - October 25, 2023: Added high scores
 
 ## Acknowledgements
-Special thank you to Pygame for providing a great library for game dev!
-Credit to the bg music used as an asset by Leonz https://www.youtube.com/watch?v=grd-K33tOSM
+- Special thank you to Pygame for providing a great library for game dev!
+- Credit to the bg music used as an asset by Leonz https://www.youtube.com/watch?v=grd-K33tOSM
