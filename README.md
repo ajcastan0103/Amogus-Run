@@ -24,8 +24,8 @@ Make sure you have Pygame installed on your system. </br>
 `python main.py`
 
 ### Gameplay Screenshots
-<img src="menusc.JPG" alt="Alt Text" style="width:400px;">
-<img src="screenshot.JPG" alt="Alt Text" style="width:400px;">
+<img src="/repo_images/menusc.JPG" alt="Alt Text" style="width:400px;">
+<img src="/repo_images/screenshot.JPG" alt="Alt Text" style="width:400px;">
 
 ### Updates
 - October 25, 2023: Added high scores
