@@ -1,11 +1,13 @@
 import pygame, os, random, sys
 from os import path
 
+# Initialize game module and set dimentions 
 pygame.init()
 
 SCREEN_HEIGHT = 600
 SCREEN_WIDTH = 1100
 
+# Assets(Running animatiions, enemies, music, etc.)
 HS_FILE = "highscore.txt"
 
 SCREEN = pygame.display.set_mode((SCREEN_WIDTH, SCREEN_HEIGHT))
@@ -97,7 +99,7 @@ class Character:
         SCREEN.blit(self.image, (self.char_rect.x, self.char_rect.y))
 
 
-# Class obstacle for enemies
+# Obstacle class
 class Obstacle:
     def __init__(self, image, type):
         self.image = image
@@ -113,9 +115,10 @@ class Obstacle:
     def draw(self, SCREEN):
         SCREEN.blit(self.image[self.type], self.rect)
 
-
+# Enemy object of class obstacle
 class Imposter(Obstacle):
     def __init__(self, image):
+        # Randomize color of enemies
         self.type = random.randint(0, 2)
         super().__init__(image, self.type)
         self.rect.y = 305
@@ -171,7 +174,8 @@ def main():
         hs_txtRect = hs_txt.get_rect()
         hs_txtRect.center = (1000, 60)
         SCREEN.blit(hs_txt, hs_txtRect)
-
+        
+    # Start Game
     while run:
         for event in pygame.event.get():
             if event.type == pygame.QUIT:
@@ -189,6 +193,8 @@ def main():
             elem.draw(SCREEN)
             elem.update()
 
+            # If user collides with enemy, show game over screen 
+            # and update high score if needed
             if player.char_rect.colliderect(elem.rect):
                 if points > highscore:
                     highscore = points
@@ -276,5 +282,7 @@ def menu(death_count):
             if event.type == pygame.KEYDOWN:
                 if event.key == pygame.K_SPACE:
                     main()
-
+                    
+# Since the game just starts , call menu 
+# function with zero deaths
 menu(death_count=0)
